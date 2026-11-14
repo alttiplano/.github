@@ -4,14 +4,14 @@ At **Alttiplano**, we take the security of our open-source tools, developer plat
 
 This is the default security policy for all Alttiplano repositories. If a repository has its own `SECURITY.md`, that one takes precedence.
 
-## ⚠️ IMPORTANT
+## ⚠️ Important
 
 **We do not accept unverified automated scanner dumps or AI-generated security reports.** We receive a large number of hallucinated or non-actionable reports and do not have the resources to review them all.
 
-- Any report without a valid, reproducible Proof of Concept (PoC) will be closed immediately.
+- Reports without a valid, reproducible Proof of Concept (PoC) demonstrating a security impact may be closed without further investigation.
 - Repeated spam submissions may result in a ban from the Alttiplano organization.
 
-AI-assisted research is fine as long as a human has verified the issue and the PoC works.
+AI-assisted security research is welcome, provided a human has verified the findings and a working PoC is included.
 
 ## Supported Versions
 
@@ -23,6 +23,8 @@ Alttiplano builds open-source tools, developer platforms, and applications. Many
 
 ### Out of Scope
 
+The following are generally out of scope, unless they demonstrate a distinct, exploitable vulnerability within an Alttiplano product.
+
 | Category                           | Rationale                                                                      |
 | ---------------------------------- | ------------------------------------------------------------------------------ |
 | **Expected local tool behavior**   | Tools executing user-provided commands or scripts as intended                  |
@@ -31,9 +33,7 @@ Alttiplano builds open-source tools, developer platforms, and applications. Many
 | **Denial of Service (DoS)**        | Resource exhaustion on local desktop software without privilege escalation     |
 | **Missing best practices**         | Missing headers or flags that do not lead to an exploitable vulnerability      |
 
----
-
-# Reporting Security Issues
+## Reporting Security Issues
 
 Please **do not disclose vulnerabilities publicly** until we have had a chance to review and fix them.
 
@@ -44,6 +44,7 @@ Please include:
 - A clear description of the vulnerability and its impact
 - Step-by-step instructions to reproduce it
 - The environment, operating system, and software version tested
+- Relevant logs or screenshots, if any
 - Suggested mitigations or patches, if you have them
 
 We do not currently offer a bug bounty.
